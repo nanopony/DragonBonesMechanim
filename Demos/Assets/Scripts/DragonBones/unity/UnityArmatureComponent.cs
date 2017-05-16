@@ -45,6 +45,7 @@ namespace DragonBones
         }
         /**
          * @language zh_CN
+         * Returns Armaturs
          * 获取骨架。
          * @readOnly
          * @see DragonBones.Armature
@@ -56,6 +57,7 @@ namespace DragonBones
         }
         /**
          * @language zh_CN
+         * Returns the animation controller.
          * 获取动画控制器。
          * @readOnly
          * @see DragonBones.Animation

@@ -4,6 +4,7 @@ namespace DragonBones
 {
     /**
      * @language zh_CN
+     * Animation controller is used to play animation and manage the animation state.
      * 动画控制器，用来播放动画数据，管理动画状态。
      * @see DragonBones.AnimationData
      * @see DragonBones.AnimationState
@@ -17,6 +18,7 @@ namespace DragonBones
         }
         /**
          * @language zh_CN
+         * Play speed. [0: stop playback, (0 ~ 1): slower, 1: normal playback, (1 ~ N): faster]
          * 播放速度。 [0: 停止播放, (0~1): 慢速播放, 1: 正常播放, (1~N): 快速播放]
          * @default 1
          * @version DragonBones 3.0
@@ -262,6 +264,7 @@ namespace DragonBones
         }
         /**
          * @language zh_CN
+         * Reset animation state
          * 清除所有动画状态。
          * @see DragonBones.AnimationState
          * @version DragonBones 4.5
@@ -283,8 +286,10 @@ namespace DragonBones
         }
         /**
          * @language zh_CN
+         * Pauses the animation
          * 暂停播放动画。
-         * @param animationName 动画状态的名称，如果未设置，则暂停所有动画状态。
+         * @param animationName The name of the animation state, if not set, pauses all animation states.
+         * @param animationName  动画状态的名称，如果未设置，则暂停所有动画状态。
          * @see DragonBones.AnimationState
          * @version DragonBones 3.0
          */
@@ -306,6 +311,7 @@ namespace DragonBones
         /**
          * @language zh_CN
          * @beta
+         * Play animation defined by configuration
          * 通过动画配置来播放动画。
          * @param animationConfig 动画配置。
          * @returns 对应的动画状态。
@@ -442,6 +448,7 @@ namespace DragonBones
         }
         /**
          * @language zh_CN
+         * Crossfade (blend) bewteen current and new animations
          * 淡入播放动画。
          * @param animationName 动画数据名称。
          * @param playTimes 播放次数。 [-1: 使用动画数据默认值, 0: 无限循环播放, [1~N]: 循环播放 N 次]
@@ -515,6 +522,7 @@ namespace DragonBones
         }
         /**
          * @language zh_CN
+         * Play the animation from the specified time
          * 从指定时间开始播放动画。
          * @param animationName 动画数据的名称。
          * @param time 开始时间。 (以秒为单位)

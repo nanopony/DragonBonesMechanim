@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Mechanim.unity
+- path: Assets/Scenes/CoreElement.unity
   isLoaded: 1
   isActive: 1

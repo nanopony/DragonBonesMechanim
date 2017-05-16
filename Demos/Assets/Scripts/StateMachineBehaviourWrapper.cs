@@ -22,21 +22,14 @@ public class StateMachineBehaviourWrapper : StateMachineBehaviour {
 
 
 		if (animator.IsInTransition (layerIndex)) {
-			var b = animator.GetBehaviours<StateMachineBehaviourWrapper> ();
-			for (int i = 0; i < b.Length; i++) {
-				if (b [i] == this)
-					continue;
-				if (b [i].Active) {
-					
-					_armature.animation.FadeIn (
-						AnimationName,
-						TransitionDuration,
-						-1
-					);
-					return;
-				}
-			}
+			_armature.animation.FadeIn (
+				AnimationName,
+				TransitionDuration,
+				-1
+			);
+			return;
 		}
+
 		// no crossfade - play straight away 
 		_armature.animation.Play(AnimationName, -1);
 
